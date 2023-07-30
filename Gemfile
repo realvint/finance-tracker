@@ -6,6 +6,7 @@ ruby '3.2.2'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.4'
 
 gem 'puma', '~> 5.0'
+gem 'slim', '~> 4.1'
 gem 'sqlite3', '~> 1.4'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5.0'
@@ -17,6 +18,8 @@ end
 group :development do
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  gem 'slimcop', require: false
+  gem 'slim_lint', require: false
   gem 'web-console', '>= 4.1.0'
 end
 
