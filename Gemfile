@@ -17,6 +17,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'letter_opener', '~> 1.7'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
   gem 'slimcop', require: false
