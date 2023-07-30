@@ -8,6 +8,7 @@ html
     = csp_meta_tag
 
     = javascript_pack_tag 'application', "data-turbolinks-track": 'reload'
+    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
 
     link rel='preconnect' href='https://fonts.googleapis.com'
     link rel='preconnect' href='https://fonts.gstatic.com'
@@ -19,4 +20,6 @@ html
     - if alert.present?
       p = alert
 
-    = yield
+    = render 'shared/navbar'
+    .container
+      = yield
